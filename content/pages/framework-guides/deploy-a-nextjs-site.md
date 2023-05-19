@@ -103,6 +103,9 @@ To deploy your application to Cloudflare Pages, you need to install the `@cloudf
 
 ```sh
 $ npm install --save-dev @cloudflare/next-on-pages
+$ git add .
+$ git commit -m "Add next-on-pages"
+$ git push
 ```
 
 To deploy your site to Pages:
@@ -121,11 +124,10 @@ To deploy your site to Pages:
 
    {{</table-wrap>}}
 
-4. Next.js requires Node.js v16 or later to build successfully. To set your Node version, go to **Settings** in your Pages project > **Environment Variables (advanced)** section and add a `NODE_VERSION` variable with a value of `16` or greater.
-5. Click on **Save and Deploy** to start the deployment. This first deployment will not be fully functional as the next step is also necessary.
-6. In your Pages project, go to **Settings** > **Functions** > **Compatibility Flags**.
-7. Configure a `nodejs_compat` flag for both production and preview.
-8. Above **Compability Flags**, go to **Compatibility Date**  and configure a compatibility date that is at least `2022-11-30` for both production and preview.
+4. Click on **Save and Deploy** to start the deployment. This first deployment will not be fully functional as the next step is also necessary.
+5. In your Pages project, go to **Settings** > **Functions** > **Compatibility Flags**.
+6. Configure a `nodejs_compat` flag for both production and preview.
+7. Above **Compability Flags**, go to **Compatibility Date**  and configure a compatibility date that is at least `2022-11-30` for both production and preview.
 
 {{<Aside type="note" header="Note">}}
 
